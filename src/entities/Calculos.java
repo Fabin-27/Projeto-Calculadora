@@ -50,5 +50,13 @@ public class Calculos {
 		}
 		return numero1 / numero2;
 	}
+	
+	public Double potenciação(double numero1, double numero2) {
+		return Math.pow(numero1, numero2);
+	}
+	
+	public Double radiciação(double numero1) {
+		return Math.sqrt(numero1);
+	}
 
 }
