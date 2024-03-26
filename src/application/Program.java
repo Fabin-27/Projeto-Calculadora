@@ -103,7 +103,7 @@ public class Program {
 				x = sc.nextInt();
 			}
 
-			System.out.println("Até a próxima :)");
+			System.out.println("Até a próxima");
 
 		}
 
