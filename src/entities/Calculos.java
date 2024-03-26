@@ -1,5 +1,7 @@
 package entities;
 
+import exceptions.DomainExceptions;
+
 public class Calculos {
 
 	public double numero1;
@@ -43,18 +45,20 @@ public class Calculos {
 	}
 
 	public Double divisão(double numero1, double numero2) {
+
 		if (numero2 == 0) {
-			System.out.println("Error");
-		} else if (numero1 == 0 && numero2 == 0) {
-			System.out.println("Error");
+			throw new DomainExceptions("Impossível dividir por zero");
+		} 
+		else {
+			return numero1 / numero2;
 		}
-		return numero1 / numero2;
+
 	}
-	
+
 	public Double potenciação(double numero1, double numero2) {
 		return Math.pow(numero1, numero2);
 	}
-	
+
 	public Double radiciação(double numero1) {
 		return Math.sqrt(numero1);
 	}
