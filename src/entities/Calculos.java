@@ -5,6 +5,10 @@ public class Calculos {
 	public double numero1;
 	public double numero2;
 
+	public Calculos() {
+
+	}
+
 	public Calculos(double numero1, double numero2) {
 		this.numero1 = numero1;
 		this.numero2 = numero2;
@@ -26,23 +30,22 @@ public class Calculos {
 		this.numero2 = numero2;
 	}
 
-	public Double soma() {
+	public Double soma(double numero1, double numero2) {
 		return numero1 + numero2;
 	}
 
-	public Double subtração() {
+	public Double subtração(double numero1, double numero2) {
 		return numero1 - numero2;
 	}
 
-	public Double multiplicação() {
+	public Double multiplicação(double numero1, double numero2) {
 		return numero1 * numero2;
 	}
 
-	public Double divisão() {
+	public Double divisão(double numero1, double numero2) {
 		if (numero2 == 0) {
 			System.out.println("Error");
-		}
-		else if (numero1 == 0 && numero2 == 0) {
+		} else if (numero1 == 0 && numero2 == 0) {
 			System.out.println("Error");
 		}
 		return numero1 / numero2;
